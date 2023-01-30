@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Better Weather</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="need_an_account">Need an account?</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="better_weather_logo">Better Weather Logo</string>
+    <string name="show_password">Show Password</string>
+    <string name="show">Show</string>
+</resources>

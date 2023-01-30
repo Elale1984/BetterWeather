@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    tools:context=".view.LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/iv_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/iv_logo_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/better_weather_logo"
+            android:src="@drawable/iv_bw_logo" />
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/tv_show_hide_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_alignEnd="@+id/et_password"
+        android:layout_marginTop="45dp"
+        android:text="@string/show"
+        android:textColor="@color/purple_700"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@id/tv_register_click"
+        android:text="@string/need_an_account"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_register_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_alignEnd="@id/et_password"
+        android:layout_marginTop="30dp"
+        android:text="@string/register"
+        android:textColor="@color/purple_700"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_register"
+        android:layout_alignEnd="@id/tv_register_click"
+        android:layout_marginTop="30dp"
+        android:text="@string/sign_in" />
+
+
+</RelativeLayout>
