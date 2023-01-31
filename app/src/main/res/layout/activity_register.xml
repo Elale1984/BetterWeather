@@ -28,7 +28,7 @@
         android:layout_marginTop="30dp">
 
         <EditText
-            android:id="@+id/etFName"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -124,19 +124,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/tv_register"
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/re_password_text_input_layout"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="5dp"
-        android:layout_toStartOf="@id/tv_register_click"
+        android:layout_toStartOf="@id/tv_login_click"
         android:text="@string/already_have_an_account"
         android:textColor="@color/black"
         android:textStyle="italic" />
 
     <TextView
-        android:id="@+id/tv_register_click"
+        android:id="@+id/tv_login_click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/re_password_text_input_layout"
@@ -150,8 +150,8 @@
         android:id="@+id/btn_signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_register"
-        android:layout_alignEnd="@id/tv_register_click"
+        android:layout_below="@id/tv_login"
+        android:layout_alignEnd="@id/tv_login_click"
         android:layout_marginTop="30dp"
         android:text="@string/create_account" />
 

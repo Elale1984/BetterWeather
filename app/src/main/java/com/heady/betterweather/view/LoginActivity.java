@@ -3,11 +3,13 @@ package com.heady.betterweather.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.heady.betterweather.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
@@ -22,6 +24,23 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         auth = FirebaseAuth.getInstance();
+
+
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = auth.getCurrentUser();
+
+        if(currentUser != null){
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            finish();
+        }
+
+        binding.tvRegisterClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                finish();
+            }
+        });
 
 
         binding.btnSignIn.setOnClickListener(view -> {
