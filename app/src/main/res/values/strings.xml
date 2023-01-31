@@ -9,4 +9,10 @@
     <string name="better_weather_logo">Better Weather Logo</string>
     <string name="show_password">Show Password</string>
     <string name="show">Show</string>
+    <string name="create_account">Create Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="zip">Zip</string>
+    <string name="re_enter_password">Re-Enter Password</string>
 </resources>
