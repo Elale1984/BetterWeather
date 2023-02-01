@@ -10,7 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.heady.betterweather.HomeActivity;
 import com.heady.betterweather.databinding.ActivityLoginBinding;
+import com.heady.betterweather.ui.home.HomeFragment;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -52,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                     auth.signInWithEmailAndPassword(email, pass)
                             .addOnSuccessListener(authResult -> {
                                 Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                                 finish();
                             }).addOnFailureListener(e -> Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show());
                     binding.etEmail.setText("");
