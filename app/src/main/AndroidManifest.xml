@@ -12,10 +12,6 @@
         android:theme="@style/Theme.BetterWeather"
         tools:targetApi="31">
         <activity
-            android:name=".SettingsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_settings" />
-        <activity
             android:name=".HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home"
@@ -32,9 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".view.MainActivity"
-            android:exported="false" />
+
     </application>
 
 </manifest>

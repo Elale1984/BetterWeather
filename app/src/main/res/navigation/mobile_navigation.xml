@@ -22,4 +22,14 @@
         android:name="com.heady.betterweather.ui.profile.ProfileFragment"
         android:label="@string/my_profile"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.heady.betterweather.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.heady.betterweather.ui.logout.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
 </navigation>
