@@ -1,4 +1,4 @@
-package com.heady.betterweather.ui.slideshow;
+package com.heady.betterweather.ui.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,16 +10,15 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.heady.betterweather.databinding.FragmentSlideshowBinding;
-import com.heady.betterweather.databinding.FragmentSlideshowBinding;
 
-public class SlideshowFragment extends Fragment {
+public class ProfileFragment extends Fragment {
 
 private FragmentSlideshowBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        ProfileViewModel slideshowViewModel =
+                new ViewModelProvider(this).get(ProfileViewModel.class);
 
     binding = FragmentSlideshowBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
