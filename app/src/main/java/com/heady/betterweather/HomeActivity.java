@@ -1,8 +1,7 @@
 package com.heady.betterweather;
 
 import android.os.Bundle;
-import android.view.View;
-import android.view.Menu;
+
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 import androidx.navigation.NavController;
@@ -16,14 +15,13 @@ import com.heady.betterweather.databinding.ActivityHomeBinding;
 public class HomeActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-private ActivityHomeBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-     binding = ActivityHomeBinding.inflate(getLayoutInflater());
-     setContentView(binding.getRoot());
+        com.heady.betterweather.databinding.ActivityHomeBinding binding = ActivityHomeBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarHome.toolbar);
         binding.appBarHome.fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -36,7 +34,7 @@ private ActivityHomeBinding binding;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_tenday, R.id.nav_profile, R.id.nav_logout)
+                R.id.nav_home, R.id.nav_tenday, R.id.nav_profile,R.id.nav_settings, R.id.nav_logout)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home);
