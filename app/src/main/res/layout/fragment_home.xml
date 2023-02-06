@@ -1,26 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment" >
+    tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="84dp" />
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="137dp"
-        android:layout_height="154dp"
-        android:src="@drawable/ic_weather_icon"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="150dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="733dp" />
+
+        <ImageView
+            android:id="@+id/ivCurrWeather"
+            android:layout_width="124dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="124dp"
+            android:src="@drawable/ic_weather_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="283dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/cardview_light_background">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHourlyWeather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="283dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvCurrTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="39°"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hutchinson"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="174dp" />
+
+        <TextView
+            android:id="@+id/tvHLTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="64° / 32°"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/tvFeelsLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feels Like 32°"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
