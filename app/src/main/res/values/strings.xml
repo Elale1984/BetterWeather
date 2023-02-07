@@ -35,6 +35,81 @@
     <string name="my_profile">My Profile</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
+
+
+
+    <string name="txtDayOfWeek">Friday</string>
+    <string name="temp_high">65°</string>
+    <string name="kansas_city">Kansas City</string>
+    <string name="my_city">My City</string>
+    <string name="city_name">Lenexa</string>
+    <string name="current_weather_Content_Description">Current weather image</string>
+    <string name="windLabel">Wind</string>
+    <string name="humidityLabel">Humidity</string>
+    <string name="icon_for_the_uv_index">Icon for the UV Index</string>
+    <string name="uv_index_text">UV Index</string>
+    <string name="uv_index_value">low</string>
+    <string name="wind_speed_icon">Wind Speed Icon</string>
+    <string name="wind_speed_value">14 mph</string>
+    <string name="humidity_icon">Humidity Icon</string>
+    <string name="humidity_percent_value">65%</string>
+    <string name="current_temp_value">71°</string>
+    <string name="ten_day_weather">Ten Day Weather</string>
+    <string name="cloud_background">Cloud background</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
+    <string name="log_in_label">LOG IN</string>
+    <string name="slash">/</string>
+    <string name="night_weather">night weather</string>
+    <string name="tag">tag</string>
+    <string name="daytwo">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="monday">Monday</string>
+    <string name="friday">Friday</string>
+    <string name="thursday">Thursday</string>
+    <string name="sunday">Sunday</string>
+    <string name="saturday">Saturday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="welcome_back">Log In</string>
+
+
+
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_up">Register Account</string>
+    <string name="sign_up_head">Sign Up</string>
+    <string name="user_name">User Name</string>
+    <string name="user_usermail_com">user@usermail.com</string>
+
+    <string name="current_weather">Current Weather</string>
+    <string name="ten_day_forecast">Ten Day Forecast</string>
+    <string name="about_us">About Us</string>
+    <string name="sign_out_menu">Sign Out</string>
+    <string name="user_name_header">User Name</string>
+    <string name="user_email_header">User@user.com</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="degrees">°</string>
+    <string name="dowtext">Monday</string>
+    <string name="th">Thursday</string>
+    <string name="_07_22">07/22</string>
+    <string name="seperate">/</string>
+    <string name="humPerc">80</string>
+    <string name="perc">%</string>
+    <string name="lowuv">Low</string>
+    <string name="wspeed">14</string>
+    <string name="mph">mph</string>
+    <string name="details">Details</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="favorite_locations">Favorite Locations</string>
+    <string name="current_city">Current_City</string>
+    <string name="add_city">Add City</string>
+    <string name="second_city">Second City</string>
+    <string name="current_cityd">Current City</string>
+    <string name="third_city">Third City</string>
+
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -50,4 +125,5 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="fragment_settings">fragment_settings</string>
+    <string name="day_temp_temp">65°</string>
 </resources>

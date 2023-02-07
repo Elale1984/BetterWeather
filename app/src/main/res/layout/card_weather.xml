@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_margin="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp"
+        android:backgroundTint="?attr/colorPrimaryVariant">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/txtDateGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtDayOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/th"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDayOfWeek"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/_07_22"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtHighLowTemps"
+                android:layout_below="@+id/txtDateGroup"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/txtHighTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/day_temp_temp"
+
+                    android:textColor="@color/secondaryLightColor"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/txtLowDegree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txtHighTemp"
+                    android:text="@string/degrees"
+                    android:textColor="@color/secondaryLightColor"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/txtSlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txtLowDegree"
+                    android:text="@string/seperate"
+                    android:textColor="@color/secondaryLightColor"
+                    android:textSize="50sp"/>
+                <TextView
+                    android:id="@+id/txtLowTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/day_temp_temp"
+                    android:layout_toEndOf="@+id/txtSlash"
+                    android:textColor="@color/secondaryLightColor"
+                    android:textSize="50sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txtLowTemp"
+                    android:text="@string/degrees"
+                    android:textColor="@color/secondaryLightColor"
+                    android:textSize="50sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imgWeatherGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHighLowTemps"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imgMorningWeather"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_placeholder" />
+                <ImageView
+                    android:id="@+id/imgEveningWeather"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_placeholder"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/imgMorningWeather"/>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
