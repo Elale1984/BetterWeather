@@ -1,92 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background=""
     tools:context=".ui.home.HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvCurrTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/day_temp_temp"
+        android:textSize="60sp" />
 
-        <TextView
-            android:id="@+id/text_home"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="733dp" />
+    <ImageView
+        android:id="@+id/ivCurrWeatherIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/tvCurrTemp"
+        android:contentDescription="@string/current_weather_icon"
+        android:src="@drawable/ic_weather_icon" />
 
-        <ImageView
-            android:id="@+id/ivCurrWeather"
-            android:layout_width="124dp"
-            android:layout_height="101dp"
-            android:layout_marginStart="220dp"
-            android:layout_marginTop="124dp"
-            android:src="@drawable/ic_weather_icon"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="283dp"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/cardview_light_background">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvHourlyWeather"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="-16dp"
-                tools:layout_editor_absoluteY="283dp" />
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:id="@+id/tvCurrTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="39°"
-            android:textSize="60sp"
-            tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="80dp" />
-
-        <TextView
-            android:id="@+id/tvLocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hutchinson"
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="174dp" />
-
-        <TextView
-            android:id="@+id/tvHLTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="64° / 32°"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="210dp" />
-
-        <TextView
-            android:id="@+id/tvFeelsLike"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Feels Like 32°"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="244dp" />
+    <TextView
+        android:id="@+id/tvCurrCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCurrTemp"
+        android:text="@string/city_name"
+        android:textSize="35sp"
+        android:layout_marginStart="15dp"/>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</RelativeLayout>
